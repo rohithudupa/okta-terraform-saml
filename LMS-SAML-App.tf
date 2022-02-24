@@ -1,8 +1,8 @@
 resource "okta_app_saml" "LMS-App" {
   label                    = "LMS-App"
   sso_url                  = "https://lms-app.com"
-  recipient                = "https://lms-app..com"
-  destination              = "https://lms-app..com"
+  recipient                = "https://lms-app.com"
+  destination              = "https://lms-app.com"
   audience                 = "https://lms-app..com/audience"
   subject_name_id_template = "$${user.userName}"
   subject_name_id_format   = "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
